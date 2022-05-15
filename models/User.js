@@ -1,15 +1,29 @@
 const { Schema, model } = require('mongoose');
 
-const UserSchema = new Schema({
-    username: {
-        type: String
+const UserSchema = new Schema(
+    {
+        username: {
+            type: String
+        },
+        email: {
+            type: String
+        },
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+        ],
+        friends: []
     },
-    email: {
-        type: String
-    },
-    thoughts: [],
-    friends: []
-});
+    {
+        toJSON: {
+            virtuals: true,
+            getters: true
+        },
+        id: false
+    }
+);
 
 // create the User model using the UserSchema
 const User = model('User', UserSchema);
