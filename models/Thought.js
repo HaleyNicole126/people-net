@@ -34,7 +34,10 @@ const ReactionSchema = new Schema(
 const ThoughtSchema = new Schema(
     {
         thoughtText: {
-            type: String
+            type: String,
+            required: true,
+            minlength: 1,
+            maxlength: 280
         },
         createdAt: {
             type: Date,
@@ -42,7 +45,8 @@ const ThoughtSchema = new Schema(
             get: createdAtVal => dateFormat(createdAtVal)
         },
         username: {
-            type: String
+            type: String,
+            required: true
         },
         reactions: [ReactionSchema]
     },
