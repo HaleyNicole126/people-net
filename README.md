@@ -20,7 +20,7 @@
   To install this project run `npm i` from the root directory which will install the necessary dependencies, including Express.js and Mongoose. 
 
   ## Usage
-  To start the server, run `npm start`. Then the database can be accessed from Insomnia. 
+  To start the server, run `npm start`. Then, the database can be accessed from Insomnia. 
 
   ## Contributing
   If you are interested in contributing to this product, please contact me using the information in the "Questions" section below. 
@@ -36,11 +36,23 @@
   ## Screenshots 
   - User Routes
 
+![image](https://user-images.githubusercontent.com/94570754/168500114-0d205fc5-9e42-4706-a6a4-8acbb4a74987.png)
+
+
   - Thought Routes
+
+![image](https://user-images.githubusercontent.com/94570754/168500132-e6ccb192-1579-4b81-94d4-91d2007c2b89.png)
+
 
   - Friend Routes
 
+![image](https://user-images.githubusercontent.com/94570754/168500156-9270bd18-a144-44ed-a083-a83d35324288.png)
+
+
   - Reaction Routes
+
+![image](https://user-images.githubusercontent.com/94570754/168500180-2165e294-894b-432d-b01e-d10bfa59d0d5.png)
+
 
   ## License 
 
